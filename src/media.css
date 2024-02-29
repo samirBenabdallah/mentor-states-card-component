@@ -1,0 +1,95 @@
+@media screen and (max-width: 1000px) {
+  body main aside > p {
+    margin-block: 10px;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 970px) {
+  body main aside > h1 {
+    font-size: 2.2rem;
+  }
+}
+@media screen and (max-width: 850px) {
+  body main aside > h1 {
+    font-size: 2rem;
+  }
+  body main aside section {
+    width: calc(100% - 80px);
+  }
+}
+@media screen and (max-width: 800px) {
+  body main aside > h1 {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  body main aside section {
+    width: calc(100% - 55px);
+  }
+}
+@media screen and (max-width: 740px) {
+  body main {
+    width: 70%;
+    min-height: 120%;
+    flex-direction: column;
+  }
+  body main header img.mobile {
+    display: block;
+  }
+  body main header img.desktop {
+    display: none;
+  }
+  body main header {
+    width: 100%;
+    height: 50%;
+    border-radius: 20px 20px 0px 0px;
+  }
+  body main aside {
+    padding: 50px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+  }
+  body main aside h1 {
+    color: var(--White);
+    font-size: 2.5rem;
+  }
+  body main aside > p {
+    margin-block: 20px;
+    padding-right: 0;
+    color: var(--Slightly-transparent-white);
+  }
+  body main aside section {
+    position: static;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  body main aside section div p {
+    color: var(--Slightly-transparent-white-headding-state);
+  }
+  body main aside section div h2 {
+    color: var(--White);
+  }
+}
+@media screen and (max-width:540px) {
+    body main {
+        width: 90%;
+       min-height: 90%;
+    }
+    body main aside > p {
+        margin-block: 30px;
+    }
+    body main header {
+        height: 30%;
+    }
+    body main aside h1 {
+        font-size: 1.3rem;
+    }
+    body main aside section {
+        flex-direction: column;
+    }
+    body main aside div {
+        margin-block: 20px;
+    }
+}

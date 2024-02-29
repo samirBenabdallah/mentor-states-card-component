@@ -1,0 +1,89 @@
+:root {
+  --Dark-desaturated-blue/*(card background)*/: hsl(244, 38%, 16%);
+  --Soft-violet/*(accent)*/: hsl(277, 64%, 61%);
+  --Soft-violet-bg/*(accent)*/: rgb(170, 92, 219, 0.6);
+  --Very-dark-blue/*(main background)*/: hsl(233, 47%, 7%);
+  --White/*(main heading, stats)*/: hsl(0, 0%, 100%);
+  --Slightly-transparent-white/*(main paragraph)*/: hsla(0, 0%, 100%, 0.75);
+  --Slightly-transparent-white-headding-state/*(stat headings)*/: hsla(
+    0,
+    0%,
+    100%,
+    0.6
+  );
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  font-family: "Lexend Deca", sans-serif;
+  background-color: var(--Very-dark-blue);
+  width: 100vw;
+  height: 100vh;
+}
+body main {
+  border-radius: 20px;
+  background-color: var(--Dark-desaturated-blue);
+  width: 80%;
+  height: 70%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+body main header {
+  border-radius: 0 20px 20px 0;
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+body main header img {
+  border-radius: inherit;
+  width: 100%;
+  height: 100%;
+}
+body main header::after {
+  border-radius: inherit;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--Soft-violet-bg);
+}
+body main header img.mobile {
+  display: none;
+}
+body main aside {
+  padding: 50px;
+  width: 50%;
+  position: relative;
+}
+body main aside h1 {
+  color: var(--White);
+  font-size: 2.5rem;
+}
+body main aside > p {
+  margin-block: 30px;
+  padding-right: 80px;
+  color: var(--Slightly-transparent-white);
+}
+body main aside section {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 40px;
+  width: calc(100% - 100px);
+}
+body main aside section div p {
+  color: var(--Slightly-transparent-white-headding-state);
+}
+body main aside section div h2 {
+  color: var(--White);
+}
